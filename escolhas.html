@@ -1,14 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>Escolher Imagens</title>
+  <header>
+    <h1>Escolha suas imagens</h1>
+  </header>
+  <br><br><br><br>
   <style>
     body {
       font-family: sans-serif;
       text-align: center;
       padding: 30px;
+    }
+    header {
+    display: flex;
+    margin: 0%;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #000000, #f0bb10);
+    padding: 30px 20%;
+    color: white;                   
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    }
+    h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Exemplo de altura, ajuste como quiser */
+  width: 100%;
     }
     .image-option {
       width: 150px;
@@ -20,20 +43,47 @@
       cursor: pointer;
     }
     .image-option.selected {
-      border-color: #007bff;
+      border-color: #ecca09ef;
+    }
+    .image-option.selected:hover {
+      transform: translateY(-5px);
+      animation: brilho 1s infinite alternate;
+      box-shadow: 0 0 5px #ecca09ef, 0 0 10px #ecca09ef, 0 0 15px #ecca09ef;
     }
     #goToSlider {
       margin-top: 20px;
       padding: 10px 20px;
       font-size: 16px;
+    @keyframes brilho {
+  0% {
+    box-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 15px #007bff;
+  }
+  100% {
+    box-shadow: 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff;
+  }
+
+      
+
     }
   </style>
 </head>
 <body>
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrossel</title>
+  <link rel="stylesheet" href="escolhas.css">
+</head>
+<body>
+  <div class="header-border">
+  </div>
 
-  <h1>Escolha as imagens</h1>
+
+  <script src="script.js"></script>
+</body>
   <div id="imageList">
-    <!-- imagens clicáveis -->
+
     <img src="https://i.pinimg.com/736x/1f/85/82/1f858231604780eedb7134dd362a57d1.jpg" class="image-option">
     <img src="https://i.pinimg.com/736x/3f/6c/69/3f6c69c1c12a6be99017be9fa7250e6f.jpg" class="image-option">
     <img src="https://i.pinimg.com/736x/6b/cc/e8/6bcce83acc7e6c069bb82718542c2201.jpg" class="image-option">
@@ -107,6 +157,3 @@
       window.location.href = 'slider.html';
     });
   </script>
-
-</body>
-</html>
