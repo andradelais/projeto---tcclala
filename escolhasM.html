@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Escolher Imagens</title>
+  <header>
+    <h1>Escolha suas imagens</h1>
+  </header>
+  <br><br><br><br>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    header {
+    display: flex;
+    margin: 0%;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #000000, #f0bb10);
+    padding: 30px 20%;
+    color: white;                   
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    }
+    h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Exemplo de altura, ajuste como quiser */
+  width: 100%;
+    }
+    .image-option {
+      width: 150px;
+      height: 50
+      0px;
+      object-fit: cover;
+      margin: 10px;
+      border: 3px solid transparent;
+      cursor: pointer;
+    }
+    .image-option.selected {
+      border-color: #ecca09ef;
+    }
+    .image-option.selected:hover {
+      transform: translateY(-5px);
+      animation: brilho 1s infinite alternate;
+      box-shadow: 0 0 5px #ecca09ef, 0 0 10px #ecca09ef, 0 0 15px #ecca09ef;
+    }
+    #goToSlider {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;}
+    @keyframes brilho {
+  0% {
+    box-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 15px #007bff;
+  }
+  100% {
+    box-shadow: 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff;
+  }
+
+      
+
+    }
+  </style>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrossel</title>
+  <link rel="stylesheet" href="escolhas.css">
+</head>
+<body>
+  <div class="header-border">
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+  <div id="imageList">
+
+    <img src="https://i.pinimg.com/736x/0b/c1/c6/0bc1c63e91ab99b367623945aa03fd4a.jpg" class="image-option">
+    <img src="https://puket.vtexassets.com/arquivos/ids/6068548/PijamaMang.png?v=638790414321370000" class="image-option">
+    <img src="https://i.pinimg.com/736x/03/b8/9d/03b89d285ec37247d3686b0885a3c603.jpg" class="image-option">
+    <img src="https://i.pinimg.com/1200x/25/95/f4/2595f49c4e8be9d4f09e2d2927892b0c.jpg" class="image-option">
+    <img src="https://sevens.vtexassets.com/arquivos/ids/334850/JSMX5170HD_1.jpg?v=638814682205670000" class="image-option">
+    <img src="https://i.pinimg.com/736x/97/c6/d3/97c6d3ad564ce8c67a42f14d8acc95f3.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/30/d2/6a/30d26ab0510392796b197a043343ae45.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/ec/c9/3f/ecc93fc625921809d6eb10a4c36b5f75.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/72/d6/1b/72d61b08e0599814f4bbbae659b7c937.jpg" class="image-option">
+    <img src="https://i.pinimg.com/1200x/db/18/a3/db18a310eb6dc27c21f37ac221f5c7c5.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/ee/ed/14/eeed14993d06a50a8a4155b3e1c6033d.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/24/f0/8e/24f08ed59e8a81a741a87a1e8e0097dd.jpg" class="image-option">
+    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9iv8uoqzprt12" class="image-option">
+    <img src="https://images.tcdn.com.br/img/img_prod/554415/calca_de_pijama_avulsa_xadrez_em_tricoline_de_viscose_molinha_e_confortavel_foxx_263297_3_d34a1aa9c7c14ee41f418549ce88357f_20220729140237.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/f2/d1/c9/f2d1c909be90da97bf719dbb54a3d757.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/66/78/9c/66789cb15a939f233b10f456a4c84f9b.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/ec/f5/27/ecf52759d76bc4c64fa1860d18b325bb.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/f2/59/a6/f259a66a098da98c3786e207e11a746e.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/ef/c7/c7/efc7c780e751968ef3f7d3922dea87e8.jpg" class="image-option">
+    <img src="https://i.pinimg.com/1200x/67/cf/58/67cf58577506fd0634cf5866a83fef5b.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/c9/93/43/c99343b246083e216726058040a90e0c.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/a1/54/93/a154937e3b30c3d6cfa664a03b9bdb22.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/88/2f/ff/882fff96fc865bac63ed5d3b45563c85.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/9a/f3/ba/9af3ba501296de163cf43b224f2ed186.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/e6/f0/2e/e6f02e76e770a19d308522cf44ba3b86.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/19/7d/72/197d72b48a7764909d0e683b6b6ab5dc.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/5f/c7/94/5fc79498e78be59a113ba093135ef407.jpg" class="image-option">
+    <img src="https://i.pinimg.com/1200x/3c/65/c6/3c65c6474b6adcaa1847a3c867821f74.jpg" class="image-option">
+    <img src="https://i.pinimg.com/1200x/ce/ed/24/ceed244eab48bb904d9e791b2bb4142c.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/14/5a/6c/145a6c7b599e0f52fbe9965e6f98f799.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/55/a2/59/55a25911603296a6f7ebb163c8b7d643.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/19/14/33/191433c46d06a95e79365a2a092c3ada.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/36/9f/91/369f9150880a4c0744f7e065fb95a137.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/57/66/4f/57664f12c04e7343123e9c6a5bbf1aad.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/7e/fc/02/7efc02b907481dcab54104782af4c3e3.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/55/8b/56/558b56218d97f98da93e08824493ad59.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/10/13/0e/10130ec5e54ed4163bf84eda1bb91589.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/c9/82/a1/c982a10536b71f0444c092907451d164.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/2f/f3/98/2ff398079decebb7ab9da13e78893280.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/5f/72/0d/5f720d597c88642487cf76c03c5c01af.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/5f/e0/df/5fe0df9afdfe3eef048fb82f1a04d08c.jpg" class="image-option">
+    <img src="https://i.pinimg.com/736x/e8/b8/b7/e8b8b7dfc805dae3bbeed9a12e50391a.jpg" class="image-option">
+    
+
+  </div>
+
+  <button id="goToSlider">Ver no carrossel</button>
+
+  <script>
+    const selectedImages = [];
+    const imageElements = document.querySelectorAll('.image-option');
+
+    imageElements.forEach(img => {
+      img.addEventListener('click', () => {
+        img.classList.toggle('selected');
+        const src = img.src;
+        if (selectedImages.includes(src)) {
+          selectedImages.splice(selectedImages.indexOf(src), 1);
+        } else {
+          selectedImages.push(src);
+        }
+      });
+    });
+
+    document.getElementById('goToSlider').addEventListener('click', () => {
+      if (selectedImages.length === 0) {
+        alert('Selecione pelo menos uma imagem!');
+        return;
+      }
+      localStorage.setItem('userImages', JSON.stringify(selectedImages));
+      window.location.href = 'slider.html';
+    });
+  </script>
